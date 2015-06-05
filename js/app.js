@@ -1,6 +1,13 @@
 $(document).ready(function() {
 	setMeImage();
 	window.onscroll = resizeLogo;
+
+	$('header').click(function(e) {
+	// Prevent a page reload when a link is pressed
+    e.preventDefault(); 
+    // Call the scroll function
+    goToByScroll($(this).attr("id"));
+	})
 });
 
 // Rotates the opactity of the 'regularMe' picture and then calls itself again for an infinite loop.
@@ -25,6 +32,13 @@ function resizeLogo(ev) {
 		$(".logo h1").animate({"font-size":"2.2em"}, 100);
 		$(".header").animate({"height": "50px"}, 100);		
 	}
-
-
 };
+
+ // This is a functions that scrolls to #{blah}link
+function goToByScroll(id){
+      // Remove "link" from the ID
+   	id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate({ scrollTop: $("."+id).offset().top},
+        'slow');
+}

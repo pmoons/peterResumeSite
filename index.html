@@ -13,42 +13,100 @@
 	<body>
 		<div class="header">
 			<div class="logo">
-				<h1>Peter Mooney</h1>
+				<h1 id="myPic"><a href="#">Peter Mooney</a></h1>
 			</div>
 
 			<nav>
-				<a href="#">About</a>
-				<a href="#">Projects</a>
-				<a href="#">Social</a>
-				<a href="#">Contact</a>
+				<a id="about" href="#">About</a>
+				<a id="projects" href="#">Projects</a>
+				<a id="social" href="#">Social</a>
+				<a id="contact" href="#">Contact</a>
 			</nav>
 
 		</div>
 
-		<div id="myPic">
+		<div class="myPic">
 				<img src="img/binaryMe.jpg" />
 				<img id="regularMePic" src="img/regularMe.jpg" />
 		</div>
 
 		<div class="about">
-			<p>Hello World! My name is Peter Mooney.  I am a Web and Android developer currently working out of New Haven, CT.  I graduated from the University of Connecticut in 2012, and have been actively involved with all aspects of technology ever since. My joys in life include entrepreneurship, craft beers, retro video games, running, and live music. </p>
+			<div class="aboutColLeft">
+				<div class="aboutPicsCol">
+					<img src="img/craftBeer.jpg" alt="Craft Beer" />
+					<img id="ken" src="img/streetFighterKen.gif" alt="Retro Video Games" />
+					<img src="img/running.jpg" alt="Running" />
+					
+				</div>
+
+			</div>
+
+			<div class="aboutColRight">
+				<h2>Hello World!</h2>
+				<p>My name is Peter Mooney.  I am a Web and Android developer currently working out of New Haven, CT.  I graduated from the University of Connecticut in 2012, and have been actively involved with all aspects of technology ever since. My joys in life include entrepreneurship, craft beers, retro video games, running, and live music. </p>
+
+				<h3>In the past, I have been active in the following roles: </h3>
+
+				<ul>
+					<li>Alpha Kappa Psi - Psi Rho, Founding Father & Technology Committee Chairman</li>
+					<li>UCONN Technology Incubator Program, Member (March - September, 2012)</li>
+					<li>Innovation Quest Incubator Program, Member (April - July, 2012)</li>
+				</ul>
+				<h3>Currently,</h3>
+				<p>I am a member of the Summer 2015 <a href="http://indie-soft.com/a100/">A100 Apprenticeship</a> cohort in Stamford CT.</p>
+			</div>
 		</div>
 
 		<div class="projects">
-			<h2>Projects</h2>
-			<h3>Sobrio</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu elit eget ex euismod dictum eleifend ac quam. Curabitur facilisis lobortis dolor</p>
-			<h3>Amayalock</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu elit eget ex euismod dictum eleifend ac quam. Curabitur facilisis lobortis dolor</p>
+			<div class="projectsColLeft">
+				<h2>Sobrio</h2>
+				<img id="sobrioLogo" src="img/sobrioLogo.png" alt="Sobrio Logo" />
+				<p>Worked as a consultant for Sobrio: a mobile app that connects sober drivers at colleges to the students that need them. Created business plan, financial analysis, roll-out strategy, and other business documents. Tied for first place at Startup Weekend: Storrs '12. Began work on Android app to accompany iPhone version.</p>
+				<img src="img/androidIcon.png" alt="Built with Android" />
+				<img src="img/businessPlanningIcon.png" alt="Planned and developed business" />
+			</div>
+
+			<div class="projectsColRight">
+				<h2>Amayalock</h2>
+
+				<img id="amayalockLogo" src="img/amayalockLogo.png" alt="Amayalock Logo" />
+
+				<p>Creator of Amayalock: Allows parents to remotely lock their child's Android device and record their reaction to share with friends and family.  Planned development of front-end website for alternative method to lock devices.  Currently beta testing.</p>
+
+				<img src="img/androidIcon.png" alt="Built with Android" />
+				<img src="img/phpIcon.png" alt="Built with PHP" />
+				<img src="img/mysqlIcon.png" alt="Built with MySQL" />
+
+			</div>
+
 		</div>
 
 		<div class="social">
-			<h2>Social</h2>
+			<h2>Connect with me</h2>
+			
+			<div class="socialMedia">
+				<a href="http://stackoverflow.com/users/1460824/peter-mooney?tab=profile"><img src="img/stackOverflowLogo.png" alt="Stack Overflow Profile" /></a>
+				<a href="http://github.com/pmoons/"><img src="img/gitHubLogo.png" alt="Git Hub Profile" /></a>
+				<a href="http://twitter.com/mangomooney"><img src="img/twitterLogo.png" alt="Twitter Profile" /></a>
+			</div>
+
 		</div>
 
 		<div class="contact">
 			<h2>Contact</h2>
+
+			<p>Like what you see?  Then contact me!</p>
+
+			<div class="contactMethods">
+				<ul>
+					<li><img src="img/emailIcon.png" alt="Email Icon" /><a href="mailto:peter.mooney90@gmail.com"> E-Mail </a></li>
+					<li><img src="img/telephoneIcon.png" alt="Telephone Icon" /><a href="tel:2035437997"> Telephone </a></li>
+				</ul>
+
+			</div>
+
 		</div>
+
 	</body>
 
 </html>

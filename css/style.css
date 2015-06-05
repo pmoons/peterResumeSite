@@ -1,15 +1,36 @@
+a {
+	color: #04756F;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 body {
 	margin: 0px;
 	background-color: #2E0927;
+	height: 100%;
+	width: 100%;
 }
 
-nav a {
+h2 {
 	color: #D90000;
-	font-size: 1.8em;
-	font-weight: bold;
-	text-transform: uppercase;
+	font-family: 'Patua One', cursive;
+	font-size: 2.2em;
+	margin-top: 10px;
+}
+
+h3 {
+	color: #D90000;
+	font-family: 'Patua One', cursive;
+	font-size: 1.7em;
+	margin-top: 40px;
+}
+
+li {
+	font-family: 'Roboto', sans-serif;
+	color: white;
 	text-decoration: none;
-	padding-right: 25px;
+	list-style: none;
 }
 
 nav {
@@ -19,17 +40,83 @@ nav {
 
 p {
 	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 
 .about {
-	color: white;
 	font-size: 1.4em;
 	text-align: center;
-	height: 700px;
+	height: 100vh;
 	background-color: #FF8C00;
+	padding-top: 3%;
 }
-.about p {
-	padding-top: 100px;
+.about .aboutColRight {
+	display: inline-block;
+	float: left;
+	padding-top: 2%;
+	text-align: left;
+	width: 50%;
+}
+
+.about .aboutColLeft {
+	float: left;
+	width: 40%;
+	margin-right: 20px;
+	padding-top: 2%;
+}
+
+.aboutPicsCol {
+	width: 250px;
+	margin: auto;
+}
+
+/*Formatting for Ken picture*/
+.about #ken {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	max-height: 225px;
+	max-width: 225px;
+}
+
+/*Formatting for pictures in the left column EXCEPT ken*/
+.about .aboutPicsCol img:not(#ken) {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 5px solid black;
+	max-height: 200px;
+	max-width: 250px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.contact {
+	font-size: 2em;
+	text-align: center;
+}
+
+.contact a {
+	font-size: 2em;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 4em;
+	margin-bottom: 0px;
+}
+
+.contact img {
+	height: 12%;
+	width: 12%;
+}
+
+.contact li {
+	text-align: justify;
+}
+
+.contact .contactMethods {
+	display: table;
+	margin: 0 auto;
 }
 
 .header {
@@ -41,6 +128,30 @@ p {
 	top: 0;
 	width: 100%;
 	z-index: 1;
+	display:block;
+}
+
+/** Formatting for Peter Mooney logo.
+Used to override formatting of 'a' tag based on specificity **/
+.header .logo h1 a {
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	color: #FF2D00;
+	font-size: 1em;
+	display: inline;
+	font-family: 'Patua One', cursive;
+}
+
+.header nav a {
+	color: #D90000;
+	font-family: 'Patua One', cursive;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-right: 25px;
 }
 
 .logo {
@@ -49,28 +160,97 @@ p {
 	margin-bottom: 0px;
 	font-weight: bold;
 	color: #FF2D00;
-	
 }
 
 .logo h1 {
 	font-size: 4em;
-	display: inline;	
+	display: inline;
 }
 
-#myPic {
+.myPic {
 	position: relative;
-	width: 50%;
-	height: 600px;
+	max-width: 100vh;
+	height: 100vh;
 	display: block;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 10%;
 }
 
-#myPic img {
-	margin-top: 15px;
+.myPic img {
 	width: 100%;
 	position: absolute;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+}
+
+.projects {
+	padding-top: 3%;
+	font-size: 1.4em;
+	height: 100vh;
+	background-color: #D90000;
+	text-align: justify;
+}
+
+/* Logos of code that built Amayalock */
+.projectsColRight img:not(#amayalockLogo) {
+	max-width: 12%;
+	max-height: 12%;
+	padding-right: 40px;
+	vertical-align: middle;
+}
+
+/* Logos of items that built Sobrio*/
+.projectsColLeft img:not(#sobrioLogo) {
+	max-width: 12%;
+	max-height: 12%;
+	padding-right: 40px;
+	vertical-align: middle;
+}
+
+.projects .projectsColLeft {
+	float: left;
+	width: 45%;
+	margin-right: 30px;
+	padding-left: 2%;
+}
+
+.projects .projectsColRight {
+	float: left;
+	width: 45%;
+	padding-left: 2%;
+}
+
+.projects h2 {
+	color: white;
+}
+
+.projects #amayalockLogo {
+	max-width: 32%;
+	max-height: 100%;
+}
+
+.projects #sobrioLogo {
+	max-width: 60%;
+	max-height: 100%;
+}
+
+.social {
+	height: 100vh;
+	background-color: #FF8C00;
+	font-size: 1.4em;
+	padding-left: 2%;
+	padding-top: 3%;
+}
+
+.social .socialMedia {
+	vertical-align: middle;
+	margin: auto;
+}
+
+.social .socialMedia img {
+	padding-left: 40px;
+	padding-right: 40px;
+	vertical-align: middle;
+	width: 27%;
 }
