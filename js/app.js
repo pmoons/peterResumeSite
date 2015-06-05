@@ -2,7 +2,7 @@ $(document).ready(function() {
 	setMeImage();
 	window.onscroll = resizeLogo;
 
-	$('header').click(function(e) {
+	$('nav > a').click(function(e) {
 	// Prevent a page reload when a link is pressed
     e.preventDefault(); 
     // Call the scroll function
