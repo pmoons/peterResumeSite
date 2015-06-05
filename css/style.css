@@ -5,6 +5,10 @@ a {
 	font-weight: bold;
 }
 
+a:hover {
+	color: #D90000;
+}
+
 body {
 	margin: 0px;
 	background-color: #2E0927;
@@ -155,6 +159,10 @@ Used to override formatting of 'a' tag based on specificity **/
 	text-transform: uppercase;
 	text-decoration: none;
 	padding-right: 25px;
+}
+
+.header nav a:hover {
+	color: white;
 }
 
 .logo {
