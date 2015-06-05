@@ -48,14 +48,15 @@ p {
 	text-align: center;
 	height: 100vh;
 	background-color: #FF8C00;
-	padding-top: 3%;
 }
 .about .aboutColRight {
 	display: inline-block;
 	float: left;
-	padding-top: 2%;
 	text-align: left;
 	width: 50%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .about .aboutColLeft {
@@ -63,6 +64,9 @@ p {
 	width: 40%;
 	margin-right: 20px;
 	padding-top: 2%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .aboutPicsCol {
@@ -184,7 +188,6 @@ Used to override formatting of 'a' tag based on specificity **/
 }
 
 .projects {
-	padding-top: 3%;
 	font-size: 2.6vmin;
 	height: 100vh;
 	background-color: #D90000;
@@ -212,12 +215,18 @@ Used to override formatting of 'a' tag based on specificity **/
 	width: 45%;
 	margin-right: 30px;
 	padding-left: 2%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .projects .projectsColRight {
 	float: left;
 	width: 45%;
 	padding-left: 2%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .projects h2 {
@@ -237,14 +246,17 @@ Used to override formatting of 'a' tag based on specificity **/
 .social {
 	height: 100vh;
 	background-color: #FF8C00;
-	font-size: 1.4em;
+	font-size: 2.6vmin;
 	padding-left: 2%;
-	padding-top: 3%;
+	padding-top: 5%;
 }
 
 .social .socialMedia {
 	vertical-align: middle;
 	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-80%);
 }
 
 .social .socialMedia img {
