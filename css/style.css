@@ -30,6 +30,45 @@ h3 {
 	margin-top: 40px;
 }
 
+header {
+	background-color: #2E0927;
+	height: 100px;
+	font-family: 'Patua One', cursive;
+	padding: 8px 20px 0px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	display:block;
+}
+
+/** Formatting for Peter Mooney logo.
+Used to override formatting of 'a' tag based on specificity **/
+header #logo h1 a {
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	color: #FF2D00;
+	font-size: 1em;
+	display: inline;
+	font-family: 'Patua One', cursive;
+}
+
+header nav a {
+	color: #D90000;
+	font-family: 'Patua One', cursive;
+	font-size: 1.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-right: 25px;
+}
+
+header nav a:hover {
+	color: white;
+}
+
 li {
 	font-family: 'Roboto', sans-serif;
 	color: white;
@@ -47,13 +86,13 @@ p {
 	color: white;
 }
 
-.about {
+#about {
 	font-size: 2.6vmin;
 	text-align: center;
 	height: 100vh;
 	background-color: #FF8C00;
 }
-.about .aboutColRight {
+#about .aboutColRight {
 	display: inline-block;
 	float: left;
 	text-align: left;
@@ -63,7 +102,7 @@ p {
 	transform: translateY(-50%);
 }
 
-.about .aboutColLeft {
+#about .aboutColLeft {
 	float: left;
 	width: 40%;
 	margin-right: 20px;
@@ -73,13 +112,13 @@ p {
 	transform: translateY(-50%);
 }
 
-.aboutPicsCol {
+#aboutPicsCol {
 	width: 250px;
 	margin: auto;
 }
 
 /*Formatting for Ken picture*/
-.about #ken {
+#about #ken {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	max-height: 225px;
@@ -87,7 +126,7 @@ p {
 }
 
 /*Formatting for pictures in the left column EXCEPT ken*/
-.about .aboutPicsCol img:not(#ken) {
+#about .aboutPicsCol img:not(#ken) {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -97,75 +136,36 @@ p {
 	width: 50%;
 }
 
-.contact {
+#contact {
 	font-size: 2em;
 	text-align: center;
 }
 
-.contact a {
+#contact a {
 	font-size: 2em;
 	text-align: center;
 }
 
-.contact h2 {
+#contact h2 {
 	font-size: 4em;
 	margin-bottom: 0px;
 }
 
-.contact img {
+#contact img {
 	height: 12%;
 	width: 12%;
 }
 
-.contact li {
+#contact li {
 	text-align: justify;
 }
 
-.contact .contactMethods {
+#contact .contactMethods {
 	display: table;
 	margin: 0 auto;
 }
 
-.header {
-	background-color: #2E0927;
-	height: 100px;
-	font-family: 'Patua One', cursive;
-	padding: 8px 20px 0px 20px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-	display:block;
-}
-
-/** Formatting for Peter Mooney logo.
-Used to override formatting of 'a' tag based on specificity **/
-.header .logo h1 a {
-	float: left;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-weight: bold;
-	color: #FF2D00;
-	font-size: 1em;
-	display: inline;
-	font-family: 'Patua One', cursive;
-}
-
-.header nav a {
-	color: #D90000;
-	font-family: 'Patua One', cursive;
-	font-size: 1.8em;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding-right: 25px;
-}
-
-.header nav a:hover {
-	color: white;
-}
-
-.logo {
+#logo {
 	float: left;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -173,12 +173,12 @@ Used to override formatting of 'a' tag based on specificity **/
 	color: #FF2D00;
 }
 
-.logo h1 {
+#logo h1 {
 	font-size: 4em;
 	display: inline;
 }
 
-.myPic {
+#myPic {
 	position: relative;
 	max-width: 100vh;
 	height: 100vh;
@@ -187,7 +187,7 @@ Used to override formatting of 'a' tag based on specificity **/
 	margin-top: 10%;
 }
 
-.myPic img {
+#myPic img {
 	width: 100%;
 	position: absolute;
 	border-radius: 50%;
@@ -195,7 +195,7 @@ Used to override formatting of 'a' tag based on specificity **/
 	-moz-border-radius: 50%;
 }
 
-.projects {
+#projects {
 	font-size: 2.6vmin;
 	height: 100vh;
 	background-color: #D90000;
@@ -203,7 +203,7 @@ Used to override formatting of 'a' tag based on specificity **/
 }
 
 /* Logos of code that built Amayalock */
-.projectsColRight img:not(#amayalockLogo) {
+#projectsColRight img:not(#amayalockLogo) {
 	max-width: 12%;
 	max-height: 12%;
 	padding-right: 40px;
@@ -211,14 +211,14 @@ Used to override formatting of 'a' tag based on specificity **/
 }
 
 /* Logos of items that built Sobrio*/
-.projectsColLeft img:not(#sobrioLogo) {
+#projectsColLeft img:not(#sobrioLogo) {
 	max-width: 12%;
 	max-height: 12%;
 	padding-right: 40px;
 	vertical-align: middle;
 }
 
-.projects .projectsColLeft {
+#projects .projectsColLeft {
 	float: left;
 	width: 45%;
 	margin-right: 30px;
@@ -228,7 +228,7 @@ Used to override formatting of 'a' tag based on specificity **/
 	transform: translateY(-50%);
 }
 
-.projects .projectsColRight {
+#projects .projectsColRight {
 	float: left;
 	width: 45%;
 	padding-left: 2%;
@@ -237,21 +237,21 @@ Used to override formatting of 'a' tag based on specificity **/
 	transform: translateY(-50%);
 }
 
-.projects h2 {
+#projects h2 {
 	color: white;
 }
 
-.projects #amayalockLogo {
+#projects #amayalockLogo {
 	max-width: 32%;
 	max-height: 100%;
 }
 
-.projects #sobrioLogo {
+#projects #sobrioLogo {
 	max-width: 60%;
 	max-height: 100%;
 }
 
-.social {
+#social {
 	height: 100vh;
 	background-color: #FF8C00;
 	font-size: 2.6vmin;
@@ -259,7 +259,7 @@ Used to override formatting of 'a' tag based on specificity **/
 	padding-top: 5%;
 }
 
-.social .socialMedia {
+#social .socialMedia {
 	vertical-align: middle;
 	margin: auto;
 	position: relative;
@@ -267,7 +267,7 @@ Used to override formatting of 'a' tag based on specificity **/
 	transform: translateY(-80%);
 }
 
-.social .socialMedia img {
+#social .socialMedia img {
 	padding-left: 40px;
 	padding-right: 40px;
 	vertical-align: middle;

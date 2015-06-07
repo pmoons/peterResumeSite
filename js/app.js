@@ -26,11 +26,11 @@ function resizeLogo(ev) {
 	}
 
 	if( bigText ) {
-		$(".logo h1").animate({"font-size":"4em"}, 100);
-		$(".header").animate({"height": "100px"}, 100);		
+		$("#logo h1").animate({"font-size":"4em"}, 100);
+		$("header").animate({"height": "100px"}, 100);		
 	}else{
-		$(".logo h1").animate({"font-size":"2.2em"}, 100);
-		$(".header").animate({"height": "50px"}, 100);		
+		$("#logo h1").animate({"font-size":"2.2em"}, 100);
+		$("header").animate({"height": "50px"}, 100);		
 	}
 };
 

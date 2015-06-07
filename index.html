@@ -1,109 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Peter Mooney - Programming Extraordinaire</title>
 		<link href='http://fonts.googleapis.com/css?family=Patua+One|Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</head>
 
 	<body>
-		<div class="header">
-			<div class="logo">
-				<h1><a id="myPic" href="#">Peter Mooney</a></h1>
-			</div>
+		<div class="container-fluid">
 
-			<nav>
-				<a id="about" href="#">About</a>
-				<a id="projects" href="#">Projects</a>
-				<a id="social" href="#">Social</a>
-				<a id="contact" href="#">Contact</a>
-			</nav>
+			<!-- HEADER AND NAV BAR -->
+			<header>
+				<div class="row">
+					<div class="col-md-8">
+						<div id="logo">
+							<h1><a href="#">Peter Mooney</a></h1>
+						</div>
 
-		</div>
+					</div>
 
-		<div class="myPic">
-				<img src="img/binaryMe.jpg" />
-				<img id="regularMePic" src="img/regularMe.jpg" />
-		</div>
+					<div class="col-md-4">
+						<nav>
+							<a href="#">About</a>
+							<a href="#">Projects</a>
+							<a href="#">Social</a>
+							<a href="#">Contact</a>
+						</nav>
 
-		<div class="about">
-			<div class="aboutColLeft">
-				<div class="aboutPicsCol">
-					<img src="img/craftBeer.jpg" alt="Craft Beer" />
-					<img id="ken" src="img/streetFighterKen.gif" alt="Retro Video Games" />
-					<img src="img/running.jpg" alt="Running" />
-					
+					</div>
+	
+				</div>
+			
+			</header>
+
+			<!-- MY PICTURE -->
+			<section id="myPic">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/binaryMe.jpg" />
+						<img id="regularMePic" src="img/regularMe.jpg" />
+
+					</div>	
+
 				</div>
 
-			</div>
+			</section>
 
-			<div class="aboutColRight">
-				<h2>Hello World!</h2>
-				<p>My name is Peter Mooney.  I am a Web and Android developer currently working out of New Haven, CT.  I graduated from the University of Connecticut in 2012, and have been actively involved with all aspects of technology ever since. My joys in life include entrepreneurship, craft beers, retro video games, running, and live music. </p>
+			<!-- ABOUT SECTION -->
+			<section id="about">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="aboutColLeft">
+							<div class="aboutPicsCol">
+								<img src="img/craftBeer.jpg" alt="Craft Beer" />
+								<img id="ken" src="img/streetFighterKen.gif" alt="Retro Video Games" />
+								<img src="img/running.jpg" alt="Running" />
+								
+							</div>
 
-				<h3>In the past, I have been active in the following roles: </h3>
+						</div>
 
-				<ul>
-					<li>Alpha Kappa Psi - Psi Rho, Founding Father & Technology Committee Chairman</li>
-					<li>UCONN Technology Incubator Program, Member (March - September, 2012)</li>
-					<li>Innovation Quest Incubator Program, Member (April - July, 2012)</li>
-				</ul>
-				<h3>Currently,</h3>
-				<p>I am a member of the Summer 2015 <a href="http://indie-soft.com/a100/">A100 Apprenticeship</a> cohort in Stamford CT.</p>
-			</div>
-		</div>
+					</div>
 
-		<div class="projects">
-			<div class="projectsColLeft">
-				<h2>Sobrio</h2>
-				<img id="sobrioLogo" src="img/sobrioLogo.png" alt="Sobrio Logo" />
-				<p>Worked as a consultant for Sobrio: a mobile app that connects sober drivers at colleges to the students that need them. Created business plan, financial analysis, roll-out strategy, and other business documents. Tied for first place at Startup Weekend: Storrs '12. Began work on Android app to accompany iPhone version.</p>
-				<img src="img/androidIcon.png" alt="Built with Android" />
-				<img src="img/businessPlanningIcon.png" alt="Planned and developed business" />
-			</div>
+					<div class="col-md-8">
+						<div class="aboutColRight">
+							<h2>Hello World!</h2>
 
-			<div class="projectsColRight">
-				<h2>Amayalock</h2>
+							<p>My name is Peter Mooney.  I am a Web and Android developer currently working out of New Haven, CT.  I graduated from the University of Connecticut in 2012, and have been actively involved with all aspects of technology ever since. My joys in life include entrepreneurship, craft beers, retro video games, running, and live music. </p>
 
-				<img id="amayalockLogo" src="img/amayalockLogo.png" alt="Amayalock Logo" />
+							<h3>In the past, I have been active in the following roles: </h3>
 
-				<p>Creator of Amayalock: Allows parents to remotely lock their child's Android device and record their reaction to share with friends and family.  Planned development of front-end website for alternative method to lock devices.  Currently beta testing.</p>
+							<ul>
+								<li>Alpha Kappa Psi - Psi Rho, Founding Father & Technology Committee Chairman</li>
+								<li>UCONN Technology Incubator Program, Member (March - September, 2012)</li>
+								<li>Innovation Quest Incubator Program, Member (April - July, 2012)</li>
+							</ul>
 
-				<img src="img/androidIcon.png" alt="Built with Android" />
-				<img src="img/phpIcon.png" alt="Built with PHP" />
-				<img src="img/mysqlIcon.png" alt="Built with MySQL" />
+							<h3>Currently,</h3>
 
-			</div>
+							<p>I am a member of the Summer 2015 <a href="http://indie-soft.com/a100/">A100 Apprenticeship</a> cohort in Stamford CT.</p>
 
-		</div>
+						</div>
 
-		<div class="social">
-				<h2>Connect with me</h2>
-				
-				<div class="socialMedia">
-					<a href="http://stackoverflow.com/users/1460824/peter-mooney?tab=profile"><img src="img/stackOverflowLogo.png" alt="Stack Overflow Profile" /></a>
-					<a href="http://github.com/pmoons/"><img src="img/gitHubLogo.png" alt="Git Hub Profile" /></a>
-					<a href="http://twitter.com/mangomooney"><img src="img/twitterLogo.png" alt="Twitter Profile" /></a>
+					</div>
+
+				</div>
+			
+			</section>	
+
+			<!-- PROJECTS -->
+			<section id="projects">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="projectsColLeft">
+							<h2>Sobrio</h2>
+
+							<img id="sobrioLogo" src="img/sobrioLogo.png" alt="Sobrio Logo" />
+
+							<p>Worked as a consultant for Sobrio: a mobile app that connects sober drivers at colleges to the students that need them. Created business plan, financial analysis, roll-out strategy, and other business documents. Tied for first place at Startup Weekend: Storrs '12. Began work on Android app to accompany iPhone version.</p>
+
+							<img src="img/androidIcon.png" alt="Built with Android" />
+							<img src="img/businessPlanningIcon.png" alt="Planned and developed business" />
+
+						</div>
+
+					</div>
+
+					<div class="col-md-6">
+						<div class="projectsColRight">
+							<h2>Amayalock</h2>
+
+							<img id="amayalockLogo" src="img/amayalockLogo.png" alt="Amayalock Logo" />
+
+							<p>Creator of Amayalock: Allows parents to remotely lock their child's Android device and record their reaction to share with friends and family.  Planned development of front-end website for alternative method to lock devices.  Currently beta testing.</p>
+
+							<img src="img/androidIcon.png" alt="Built with Android" />
+							<img src="img/phpIcon.png" alt="Built with PHP" />
+							<img src="img/mysqlIcon.png" alt="Built with MySQL" />
+
+						</div>
+
+					</div>
+
+				</div>
+			
+			</section>
+
+			<!-- SOCIAL -->
+			<section id="social">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Connect with me</h2>
+						
+						<div class="socialMedia">
+							<a href="http://stackoverflow.com/users/1460824/peter-mooney?tab=profile"><img src="img/stackOverflowLogo.png" alt="Stack Overflow Profile" /></a>
+							<a href="http://github.com/pmoons/"><img src="img/gitHubLogo.png" alt="Git Hub Profile" /></a>
+							<a href="http://twitter.com/mangomooney"><img src="img/twitterLogo.png" alt="Twitter Profile" /></a>
+						</div>
+
+					</div>
+
 				</div>
 
-		</div>
+			</section>
 
-		<div class="contact">
-			<h2>Contact</h2>
+			<!-- CONTACT -->
+			<footer id="contact">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Contact</h2>
 
-			<p>Like what you see?  Then contact me!</p>
+						<p>Like what you see?  Then contact me!</p>
 
-			<div class="contactMethods">
-				<ul>
-					<li><img src="img/emailIcon.png" alt="Email Icon" /><a href="mailto:peter.mooney90@gmail.com"> E-Mail </a></li>
-					<li><img src="img/telephoneIcon.png" alt="Telephone Icon" /><a href="tel:2035437997"> Telephone </a></li>
-				</ul>
+						<div class="contactMethods">
+							<ul>
+								<li><img src="img/emailIcon.png" alt="Email Icon" /><a href="mailto:peter.mooney90@gmail.com"> E-Mail </a></li>
+								<li><img src="img/telephoneIcon.png" alt="Telephone Icon" /><a href="tel:2035437997"> Telephone </a></li>
+							</ul>
 
-			</div>
+						</div>
+
+					</div>
+
+				</div>
+			
+			</footer>
 
 		</div>
 
