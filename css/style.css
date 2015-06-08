@@ -92,48 +92,28 @@ p {
 	height: 100vh;
 	background-color: #FF8C00;
 }
-#about .aboutColRight {
-	display: inline-block;
-	float: left;
+
+#aboutColRight {
 	text-align: left;
-	width: 50%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+
 }
 
-#about .aboutColLeft {
-	float: left;
-	width: 40%;
-	margin-right: 20px;
-	padding-top: 2%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+#aboutColLeft {
+
 }
 
 #aboutPicsCol {
-	width: 250px;
-	margin: auto;
+
 }
 
 /*Formatting for Ken picture*/
 #about #ken {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	max-height: 225px;
-	max-width: 225px;
+
 }
 
 /*Formatting for pictures in the left column EXCEPT ken*/
 #about .aboutPicsCol img:not(#ken) {
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border: 5px solid black;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	width: 50%;
 }
 
 #contact {
