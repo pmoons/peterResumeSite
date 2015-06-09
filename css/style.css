@@ -1,3 +1,4 @@
+
 a {
 	color: #04756F;
 	font-family: 'Roboto', sans-serif;
@@ -14,11 +15,11 @@ body {
 	background-color: #2E0927;
 	height: 100%;
 	width: 100%;
+	font-size: 1em;
 }
 
 h1 {
-	margin-top: -8px;
-	font-size: 4em;
+	margin-top: 0px;
 }
 
 h2 {
@@ -39,8 +40,7 @@ header .navbar-inverse {
 	background-color: #2E0927;
 	border: 0px;
 	font-family: 'Patua One', cursive;
-	padding: 8px 20px 0px 20px;
-	position: fixed;
+	/*padding: 8px 20px 0px 20px;*/
 	top: 0;
 	width: 100%;
 	z-index: 1;
@@ -48,6 +48,18 @@ header .navbar-inverse {
 	text-transform: uppercase;
 }
 
+nav {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container-fluid > .navbar-header {
+	margin: 0px;
+}
 .navbar-brand {
 	padding-top: 10px;
 }
@@ -71,10 +83,9 @@ header .navbar-inverse {
 }
 
 /** Formatting for navbar links **/
-.navbar-inverse .navbar-nav > li > a{
+.navbar-inverse .navbar-nav > li > a {
 	color: #D90000;
 	font-family: 'Patua One', cursive;
-	font-size: 1.8em;
 }
 
 li {
@@ -223,4 +234,29 @@ p {
 
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 1.4em;
+		margin-left: -20px;
+
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	h1 {
+		font-size: 1.7em;
+		margin-left: -20px;
+	}
+}
+
+@media (min-width: 769px) {
+	h1 {
+		font-size: 5vw;
+	}
+
+	.navbar-inverse .navbar-nav > li > a {
+		font-size: 2vw;
+	}
 }
