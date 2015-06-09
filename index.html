@@ -6,11 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Peter Mooney - Programming Extraordinaire</title>
 		<link href='http://fonts.googleapis.com/css?family=Patua+One|Roboto' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
+		<link href="css/style.css" rel="stylesheet" type="text/css" >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/app.js"></script>
+		<script src="js/app.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -27,7 +27,7 @@
 					</div>
 
 					<div class="col-md-4">
-						<nav>
+						<nav class="navbar navbar-default">
 							<a href="#">About</a>
 							<a href="#">Projects</a>
 							<a href="#">Social</a>
@@ -43,9 +43,9 @@
 			<!-- MY PICTURE -->
 			<section id="myPic">
 				<div class="row">
-					<div class="col-md-12">
-						<img src="img/binaryMe.jpg" />
-						<img id="regularMePic" src="img/regularMe.jpg" />
+					<div class="col-xs-12">
+						<img class="img-resposive img-circle" src="img/binaryMe.jpg" />
+						<img class="img-responsive img-circle" id="regularMePic" src="img/regularMe.jpg" />
 
 					</div>	
 
@@ -55,19 +55,15 @@
 
 			<!-- ABOUT SECTION -->
 			<section id="about">
-				<div class="row">
-					<div id="aboutColLeft" class="col-md-4">
-
-							<div class="aboutPicsCol">
-								<img class="img-responsive img-circle center-block" src="img/craftBeer.jpg" alt="Craft Beer" />
-								<img class="img-responsive center-block" id="ken" src="img/streetFighterKen.gif" alt="Retro Video Games" />
-								<img class="img-responsive img-circle center-block" src="img/running.jpg" alt="Running" />
-				
-							</div>
+				<div class="row vertical-center">
+					<div id="aboutColLeft" class="hidden-xs col-sm-4">
+						<img class="img-responsive img-circle center-block" src="img/craftBeer.jpg" alt="Craft Beer" />
+						<img class="img-responsive center-block" id="ken" src="img/streetFighterKen.gif" alt="Retro Video Games" />
+						<img class="img-responsive img-circle center-block" src="img/running.jpg" alt="Running" />
 
 					</div>
 
-					<div id="aboutColRight" class="col-md-8">
+					<div id="aboutColRight" class="col-xs-12 col-sm-8">
 							<h2>Hello World!</h2>
 
 							<p>My name is Peter Mooney.  I am a Web and Android developer currently working out of New Haven, CT.  I graduated from the University of Connecticut in 2012, and have been actively involved with all aspects of technology ever since. My joys in life include entrepreneurship, craft beers, retro video games, running, and live music. </p>
@@ -92,11 +88,11 @@
 
 			<!-- PROJECTS -->
 			<section id="projects">
-				<div class="row">
-					<div id="projectsColLeft" class="col-md-6">
+				<div class="row vertical-center">
+					<div id="projectsColLeft" class="col-xs-12 col-sm-6">
 						<h2>Sobrio</h2>
 
-						<img id="sobrioLogo" src="img/sobrioLogo.png" alt="Sobrio Logo" />
+						<img class="img-responsive center-block" id="sobrioLogo" src="img/sobrioLogo.png" alt="Sobrio Logo" />
 
 						<p>Worked as a consultant for Sobrio: a mobile app that connects sober drivers at colleges to the students that need them. Created business plan, financial analysis, roll-out strategy, and other business documents. Tied for first place at Startup Weekend: Storrs '12. Began work on Android app to accompany iPhone version.</p>
 
@@ -105,10 +101,10 @@
 
 					</div>
 
-					<div id="projectsColRight" class="col-md-6">
+					<div id="projectsColRight" class="col-xs-12 col-sm-6">
 						<h2>Amayalock</h2>
 
-						<img id="amayalockLogo" src="img/amayalockLogo.png" alt="Amayalock Logo" />
+						<img class="img-responsive center-block" id="amayalockLogo" src="img/amayalockLogo.png" alt="Amayalock Logo" />
 
 						<p>Creator of Amayalock: Allows parents to remotely lock their child's Android device and record their reaction to share with friends and family.  Planned development of front-end website for alternative method to lock devices.  Currently beta testing.</p>
 
@@ -124,13 +120,13 @@
 
 			<!-- SOCIAL -->
 			<section id="social">
-				<div class="row">
-					<div id="socialMedia" class="col-md-12">
+				<div class="row vertical-center">
+					<div id="socialMedia" class="col-xs-12">
 						<h2>Connect with me</h2>
 	
-						<a href="http://stackoverflow.com/users/1460824/peter-mooney?tab=profile"><img src="img/stackOverflowLogo.png" alt="Stack Overflow Profile" /></a>
-						<a href="http://github.com/pmoons/"><img src="img/gitHubLogo.png" alt="Git Hub Profile" /></a>
-						<a href="http://twitter.com/mangomooney"><img src="img/twitterLogo.png" alt="Twitter Profile" /></a>
+						<a href="http://stackoverflow.com/users/1460824/peter-mooney?tab=profile"><img class="img-responsive center-block" src="img/stackOverflowLogo.png" alt="Stack Overflow Profile" /></a>
+						<a href="http://github.com/pmoons/"><img class="img-responsive center-block" src="img/gitHubLogo.png" alt="Git Hub Profile" /></a>
+						<a href="http://twitter.com/mangomooney"><img class="img-responsive center-block" src="img/twitterLogo.png" alt="Twitter Profile" /></a>
 
 					</div>
 

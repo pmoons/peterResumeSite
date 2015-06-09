@@ -87,7 +87,7 @@ p {
 }
 
 #about {
-	font-size: 2.6vmin;
+	font-size: 2.6vh;
 	text-align: center;
 	height: 100vh;
 	background-color: #FF8C00;
@@ -95,25 +95,19 @@ p {
 
 #aboutColRight {
 	text-align: left;
-
-}
-
-#aboutColLeft {
-
-}
-
-#aboutPicsCol {
-
 }
 
 /*Formatting for Ken picture*/
 #about #ken {
-
+	width: 40%;
+	height: 40%;
 }
 
 /*Formatting for pictures in the left column EXCEPT ken*/
-#about .aboutPicsCol img:not(#ken) {
+#aboutColLeft img:not(#ken) {
 	border: 5px solid black;
+	width: 40%;
+	height: 40%;
 }
 
 #contact {
@@ -198,37 +192,16 @@ p {
 	vertical-align: middle;
 }
 
-#projects .projectsColLeft {
-	float: left;
-	width: 45%;
-	margin-right: 30px;
-	padding-left: 2%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-#projects .projectsColRight {
-	float: left;
-	width: 45%;
-	padding-left: 2%;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 #projects h2 {
 	color: white;
 }
 
-#projects #amayalockLogo {
-	max-width: 32%;
-	max-height: 100%;
+#amayalockLogo {
+	height: 20vw;
 }
 
-#projects #sobrioLogo {
-	max-width: 60%;
-	max-height: 100%;
+#sobrioLogo {
+	height: 20vw;
 }
 
 #social {
@@ -247,9 +220,17 @@ p {
 	transform: translateY(-80%);
 }
 
-#social .socialMedia img {
+#social #socialMedia img {
 	padding-left: 40px;
 	padding-right: 40px;
 	vertical-align: middle;
 	width: 27%;
+}
+
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+
+	display: flex;
+	align-items: center;
 }
