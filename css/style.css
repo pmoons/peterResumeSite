@@ -238,12 +238,12 @@ p {
 
 @media (max-width: 480px) {
 	h1 {
-		font-size: 1.4em;
+		font-size: 1.3em;
 		margin-left: -20px;
 	}
 
 	.navbar-inverse .navbar-nav > li > a {
-		font-size: 4vw;
+		font-size: 5vmin;
 	}
 }
 
@@ -254,7 +254,7 @@ p {
 	}
 
 	.navbar-inverse .navbar-nav > li > a {
-		font-size: 4vw;
+		font-size: 5vmin;
 	}
 }
 
@@ -264,6 +264,6 @@ p {
 	}
 
 	.navbar-inverse .navbar-nav > li > a {
-		font-size: 2vw;
+		font-size: 3vmin;
 	}
 }
