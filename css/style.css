@@ -37,7 +37,6 @@ h3 {
 header .navbar-inverse {
 	background-color: #2E0927;
 	border: 0px;
-	height: 100px;
 	font-family: 'Patua One', cursive;
 	padding: 8px 20px 0px 20px;
 	position: fixed;
@@ -48,6 +47,17 @@ header .navbar-inverse {
 	text-transform: uppercase;
 }
 
+/* Styling for hamburger button */
+.navbar-toggle {
+	border: 0px;
+}
+
+.navbar-collapse {
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+
+}
 /** Formatting for Peter Mooney logo**/
 #logo {
 	color: #FF2D00 ;
