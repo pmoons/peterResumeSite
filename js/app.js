@@ -3,10 +3,10 @@ $(document).ready(function() {
 	window.onscroll = resizeLogo;
 
 	$('nav > a').click(function(e) {
-	// Prevent a page reload when a link is pressed
-    e.preventDefault(); 
-    // Call the scroll function
-    goToByScroll($(this).attr("id"));
+		// Prevent a page reload when a link is pressed
+	    e.preventDefault(); 
+	    // Call the scroll function
+	    goToByScroll($(this).attr("id"));
 	})
 });
 
@@ -17,20 +17,13 @@ function setMeImage() {
 
 
 function resizeLogo(ev) {
-	var bigText = true;
-
-	if (window.pageYOffset > 250) {
-		bigText = false;
-	} else if (window.pageYOffset <= 250) {
-		bigText = true;
-	}
-
-	if( bigText ) {
-		$("#logo h1").animate({"font-size":"4em"}, 100);
-		$("header").animate({"height": "100px"}, 100);		
-	}else{
+	if( window.pageYOffset > 175 ) {
 		$("#logo h1").animate({"font-size":"2.2em"}, 100);
-		$("header").animate({"height": "50px"}, 100);		
+		/*$("header").animate({"height": "50px"}, 100);*/	
+			
+	} else {
+		$("#logo h1").animate({"font-size":"4em"}, 100);
+		/*$("header").animate({"height": "100px"}, 100);	*/
 	}
 };
 
