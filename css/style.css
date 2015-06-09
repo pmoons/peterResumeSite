@@ -16,6 +16,10 @@ body {
 	width: 100%;
 }
 
+h1 {
+	margin-top: -8px;
+}
+
 h2 {
 	color: #D90000;
 	font-family: 'Patua One', cursive;
@@ -30,8 +34,9 @@ h3 {
 	margin-top: 40px;
 }
 
-header {
+header .navbar-inverse {
 	background-color: #2E0927;
+	border: 0px;
 	height: 100px;
 	font-family: 'Patua One', cursive;
 	padding: 8px 20px 0px 20px;
@@ -40,33 +45,22 @@ header {
 	width: 100%;
 	z-index: 1;
 	display:block;
+	text-transform: uppercase;
 }
 
-/** Formatting for Peter Mooney logo.
-Used to override formatting of 'a' tag based on specificity **/
-header #logo h1 a {
-	float: left;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-weight: bold;
-	color: #FF2D00;
+/** Formatting for Peter Mooney logo**/
+#logo {
+	color: #FF2D00 ;
 	font-size: 1em;
 	display: inline;
 	font-family: 'Patua One', cursive;
 }
 
-header nav a {
+/** Formatting for navbar links **/
+.navbar-inverse .navbar-nav > li > a{
 	color: #D90000;
 	font-family: 'Patua One', cursive;
 	font-size: 1.8em;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding-right: 25px;
-}
-
-header nav a:hover {
-	color: white;
 }
 
 li {
@@ -74,11 +68,6 @@ li {
 	color: white;
 	text-decoration: none;
 	list-style: none;
-}
-
-nav {
-	float: right;
-	margin-top: 0.30%;
 }
 
 p {
@@ -137,19 +126,6 @@ p {
 #contact .contactMethods {
 	display: table;
 	margin: 0 auto;
-}
-
-#logo {
-	float: left;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-weight: bold;
-	color: #FF2D00;
-}
-
-#logo h1 {
-	font-size: 4em;
-	display: inline;
 }
 
 #myPic {
