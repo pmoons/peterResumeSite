@@ -2,11 +2,11 @@ $(document).ready(function() {
 	setMeImage();
 	window.onscroll = resizeLogo;
 
-	$('nav > a').click(function(e) {
+	$('.navbar-inverse .navbar-nav > li > a').click(function(e) {
 		// Prevent a page reload when a link is pressed
 	    e.preventDefault(); 
 	    // Call the scroll function
-	    goToByScroll($(this).attr("id"));
+	    goToByScroll($(this).attr("alt"));
 	})
 });
 
@@ -17,13 +17,10 @@ function setMeImage() {
 
 
 function resizeLogo(ev) {
-	if( window.pageYOffset > 175 ) {
-		$("#logo h1").animate({"font-size":"2.2em"}, 100);
-		/*$("header").animate({"height": "50px"}, 100);*/	
-			
-	} else {
-		$("#logo h1").animate({"font-size":"4em"}, 100);
-		/*$("header").animate({"height": "100px"}, 100);	*/
+	if ( window.pageYOffset > 175  && window.innerWidth > 768 ) {
+		$("#logo h1").animate({"font-size":"2vmax"}, 100);	
+	} else if (window.pageYOffset <= 174 && window.innerWidth > 768) {
+		$("#logo h1").animate({"font-size":"5vw"}, 100);
 	}
 };
 
@@ -32,6 +29,6 @@ function goToByScroll(id){
       // Remove "link" from the ID
    	id = id.replace("link", "");
       // Scroll
-    $('html,body').animate({ scrollTop: $("."+id).offset().top},
+    $('html,body').animate({ scrollTop: $("#"+id).offset().top},
         'slow');
 }
