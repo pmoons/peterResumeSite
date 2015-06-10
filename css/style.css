@@ -88,6 +88,11 @@ nav {
 	font-family: 'Patua One', cursive;
 }
 
+/* Overrides Bootstrap's a:focus nav color */;
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: #D90000;
+}
+
 li {
 	font-family: 'Roboto', sans-serif;
 	color: white;
