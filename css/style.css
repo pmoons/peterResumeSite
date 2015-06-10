@@ -292,4 +292,9 @@ p {
 	#navlink:focus {
 		color: #D90000 !important;
 	}
+
+	#social .socialMedia img {
+		width: 30vh;
+	}
+	
 }
