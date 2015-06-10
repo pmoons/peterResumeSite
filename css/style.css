@@ -75,6 +75,11 @@ nav {
 	-webkit-box-shadow: none;
 
 }
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
 /** Formatting for Peter Mooney logo**/
 #logo {
 	color: #FF2D00 ;
@@ -210,23 +215,19 @@ p {
 	height: 100vh;
 	background-color: #FF8C00;
 	font-size: 2.6vmin;
-	padding-left: 2%;
-	padding-top: 5%;
 }
 
 #social .socialMedia {
-	vertical-align: middle;
+	padding-top: 30px;
 	margin: auto;
 	position: relative;
-	top: 50%;
-	transform: translateY(-80%);
+  	top: 50%;
+  	transform: translateY(35%);
 }
 
-#social #socialMedia img {
-	padding-left: 40px;
-	padding-right: 40px;
+#social .socialMedia img {
 	vertical-align: middle;
-	width: 27%;
+	width: 33vmin;
 }
 
 .vertical-center {
@@ -245,6 +246,16 @@ p {
 	.navbar-inverse .navbar-nav > li > a {
 		font-size: 5vmin;
 	}
+
+	/* Sizing and positioning for social media buttons */
+	#social .socialMedia img {
+		width: 30vh;
+	}
+
+	#social .socialMedia {
+		padding-top: 0px;
+		transform: translateY(0%);
+	}
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -256,6 +267,16 @@ p {
 	.navbar-inverse .navbar-nav > li > a {
 		font-size: 5vmin;
 	}
+
+	/* Sizing and positioning for social media buttons */
+	#social .socialMedia img {
+		width: 30vh;
+	}
+
+	#social .socialMedia {
+		padding-top: 0px;
+		transform: translateY(0%);
+	}
 }
 
 @media (min-width: 769px) {
@@ -266,9 +287,9 @@ p {
 	.navbar-inverse .navbar-nav > li > a {
 		font-size: 3vmin;
 	}
-	
+
 	/* Overrides Bootstrap's a:focus nav color */;
-	.navbar-inverse .navbar-nav > li > a:focus {
-		color: #D90000;
+	#navlink:focus {
+		color: #D90000 !important;
 	}
 }

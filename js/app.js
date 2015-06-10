@@ -50,7 +50,7 @@ function changeNavColor() {
         $('.about').css("background-color", "#2E0927");
         $('.contact').css("background-color", "#2E0927");
     }
-    if (x > (social.offset().top - 1 + social.height() / 2)) {
+    if (x > (social.offset().top - 1 + social.height() / 5)) {
     	$('.contact').css("background-color", "#04756F");
     	// Reset other nav link colors
         $('.projects').css("background-color", "#2E0927");
