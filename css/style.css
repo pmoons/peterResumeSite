@@ -168,11 +168,12 @@ p {
 }
 
 #myPic img {
-	width: 100%;
+	width: 100vmin;
 	position: absolute;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
+	transform: translateY(-65%);
 }
 
 #projects {
@@ -236,7 +237,6 @@ p {
 .vertical-center {
 	min-height: 100%;
 	min-height: 100vh;
-
 	display: flex;
 	align-items: center;
 }
