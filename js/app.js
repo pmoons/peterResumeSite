@@ -75,7 +75,7 @@ function resizeLogo(ev) {
 
 };
 
- // This is a function that scrolls to #{blah}link
+// This is a function that scrolls to #{blah}link
 function goToByScroll(id){
     // Remove "link" from the ID
    	id = id.replace("link", "");
@@ -86,4 +86,8 @@ function goToByScroll(id){
     changeNavColor();
     // Reset nav text color
     $("." + id).css("color: #D90000");
+    // Close menu drop down if screen is small enough
+    if (window.innerWidth < 768) {
+    	document.getElementById("navButton").click();
+    }
 };
