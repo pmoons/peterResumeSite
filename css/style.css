@@ -6,8 +6,24 @@ a {
 	font-weight: bold;
 }
 
+.job-header {
+	color: #04756F;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italics {
+	font-style: italic;
+}
+
 a:hover {
 	color: #D90000;
+}
+
+hr {
+	width: 50%;
 }
 
 body {
@@ -33,6 +49,12 @@ h3 {
 	color: #D90000;
 	font-family: 'Patua One', cursive;
 	font-size: 1.7em;
+}
+
+h4 {
+	color: #D90000;
+	font-family: 'Patua One', cursive;
+	font-size: 1.2em;
 	margin-top: 40px;
 }
 
@@ -96,7 +118,7 @@ li {
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	text-decoration: none;
-	list-style: none;
+	/*list-style: none;*/
 }
 
 p {
@@ -107,25 +129,9 @@ p {
 #about {
 	font-size: 2.6vh;
 	text-align: center;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #FF8C00;
-}
-
-#aboutColRight {
 	text-align: left;
-}
-
-/*Formatting for Ken picture*/
-#about #ken {
-	width: 40%;
-	height: 40%;
-}
-
-/*Formatting for pictures in the left column EXCEPT ken*/
-#aboutColLeft img:not(#ken) {
-	border: 5px solid black;
-	width: 40%;
-	height: 40%;
 }
 
 #contact {
