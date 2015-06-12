@@ -1,5 +1,22 @@
 $(document).ready(function() {
-	setMeImage();
+    // If the user is on a mobile device, set myPic image opacity rotation
+    if (window.innerWidth < 768) {
+	   setMeImage();
+    }
+
+    $( "#regularMePic" ).hover(
+        function() {
+            if (window.innerWidth > 768) {
+                $( this ).fadeTo(500, 0);
+            }
+        }, function() {
+            if (window.innerWidth > 768) {
+                $( this ).fadeTo(500, 1);
+            }
+        }
+    );
+
+    // Everytime the window scrolls, run this function
 	window.onscroll = resizeLogo;
 
 	$('.navbar-inverse .navbar-nav > li > a').click(function(e) {

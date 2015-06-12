@@ -34,6 +34,10 @@ body {
 	font-size: 1em;
 }
 
+h1, h2, h3 {
+	margin-left: 15px;
+}
+
 h1 {
 	margin-top: 0px;
 }
@@ -99,7 +103,7 @@ nav {
 
 .row {
 	margin-right: 0px;
-	margin-left: 0px;
+	margin-left: -15px;
 }
 /** Formatting for Peter Mooney logo**/
 #logo {
@@ -124,6 +128,7 @@ li {
 p {
 	font-family: 'Roboto', sans-serif;
 	color: white;
+	padding-left: 15px;
 }
 
 #about {
@@ -152,6 +157,7 @@ p {
 #contact img {
 	height: 12%;
 	width: 12%;
+	vertical-align: inherit;
 }
 
 #contact li {
@@ -161,6 +167,10 @@ p {
 #contact .contactMethods {
 	display: table;
 	margin: 0 auto;
+}
+
+.contactMethods li {
+	list-style: none;
 }
 
 #myPic {
@@ -182,7 +192,7 @@ p {
 }
 
 #projects {
-	font-size: 2.6vmin;
+	font-size: 2.6vh;
 	min-height: 100vh;
 	background-color: #D90000;
 	text-align: justify;
@@ -298,6 +308,11 @@ p {
 
 	#social .socialMedia img {
 		width: 30vh;
+	}
+
+	/* Positions logo correctly on large screens */
+	.navbar-brand {
+		padding: 0px;
 	}
 
 }
