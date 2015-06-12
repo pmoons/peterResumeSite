@@ -1,9 +1,13 @@
 $(document).ready(function() {
-    // If the user is on a mobile device, set myPic image opacity rotation
+    // If the user is on a mobile device...
     if (window.innerWidth < 768) {
+       // Set myPic image opacity rotation
 	   setMeImage();
+       // Remove grayscale from social media images
+       $( "#stack-overflow-logo, #git-hub-logo, #twitter-logo").removeClass("grayscale");
     }
 
+    // Mouse hover event handler for My Picture
     $( "#regularMePic" ).hover(
         function() {
             if (window.innerWidth > 768) {
@@ -15,6 +19,18 @@ $(document).ready(function() {
             }
         }
     );
+
+    // Mouse hover event handler for Social Media logos
+    $( "#stack-overflow-logo, #git-hub-logo, #twitter-logo").hover(
+        function() {
+            if (window.innerWidth > 768) {
+                $( this ).removeClass("grayscale");
+            }
+        }, function() {
+            if (window.innerWidth > 768) {
+                $( this ).addClass("grayscale");
+            }
+    });
 
     // Everytime the window scrolls, run this function
 	window.onscroll = resizeLogo;
@@ -39,6 +55,8 @@ function changeNavColor() {
         social = $('#social'),
         contact = $('#contact');
 
+    // Offset Y section detection by 41 pixels because that is roughly how many pixels tall the navbar is.
+    // A user scrolling to that section wouldn't be able to see the top 41 pixels otherwise.
   	if (x >= myPic.offset().top && x < (myPic.offset().top + myPic.height())) {
   		//Reset all nav links
   		$('.about').css("background-color", "#2E0927");
@@ -46,28 +64,28 @@ function changeNavColor() {
         $('.social').css("background-color", "#2E0927");
         $('.contact').css("background-color", "#2E0927");
   	}
-    if (x >= about.offset().top - 1 && x < (about.offset().top + about.height())) {
+    if (x >= about.offset().top - 41 && x < (about.offset().top + about.height())) {
         $('.about').css("background-color", "#04756F");
         // Reset other nav link colors
         $('.projects').css("background-color", "#2E0927");
         $('.social').css("background-color", "#2E0927");
         $('.contact').css("background-color", "#2E0927");
     }
-    if (x >= projects.offset().top - 1 && x < (projects.offset().top + projects.height())) {
+    if (x >= projects.offset().top - 41 && x < (projects.offset().top + projects.height())) {
         $('.projects').css("background-color", "#04756F");
         // Reset other nav link colors
         $('.about').css("background-color", "#2E0927");
         $('.social').css("background-color", "#2E0927");
         $('.contact').css("background-color", "#2E0927");
     }
-    if (x >= social.offset().top - 1 && x < (social.offset().top + social.height() / 2)) {
+    if (x >= social.offset().top - 41 && x < (social.offset().top + social.height() / 2)) {
         $('.social').css("background-color", "#04756F");
         // Reset other nav link colors
         $('.projects').css("background-color", "#2E0927");
         $('.about').css("background-color", "#2E0927");
         $('.contact').css("background-color", "#2E0927");
     }
-    if (x > (social.offset().top - 1 + social.height() / 5)) {
+    if (x > (social.offset().top - 41 + social.height() / 5)) {
     	$('.contact').css("background-color", "#04756F");
     	// Reset other nav link colors
         $('.projects').css("background-color", "#2E0927");
@@ -82,6 +100,7 @@ function setMeImage() {
 };
 
 function resizeLogo(ev) {
+    // Do not run function if screen is small
 	if ( window.pageYOffset > 175  && window.innerWidth > 768 ) {
 		// Shrink logo
 		$("#logo h1").animate({"font-size":"2vmax"}, 100);	
@@ -97,7 +116,7 @@ function goToByScroll(id){
     // Remove "link" from the ID
    	id = id.replace("link", "");
     // Scroll
-    $('html,body').animate({ scrollTop: $("#" + id).offset().top -40},
+    $('html,body').animate({ scrollTop: $("#" + id).offset().top - 40},
         'slow');
     // Change nav link background
     changeNavColor();

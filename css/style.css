@@ -6,21 +6,10 @@ a {
 	font-weight: bold;
 }
 
-.job-header {
-	color: #04756F;
-}
-
-.bold {
-	font-weight: bold;
-}
-
-.italics {
-	font-style: italic;
-}
-
 a:hover {
 	color: #D90000;
 }
+
 
 hr {
 	width: 50%;
@@ -74,10 +63,28 @@ header .navbar-inverse {
 	text-transform: uppercase;
 }
 
+li {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-decoration: none;
+	/*list-style: none;*/
+}
+
 nav {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding-left: 15px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
 .container-fluid {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -86,6 +93,15 @@ nav {
 .container-fluid > .navbar-header {
 	margin: 0px;
 }
+
+.job-header {
+	color: #04756F;
+}
+
+.italics {
+	font-style: italic;
+}
+
 .navbar-brand {
 	padding-top: 10px;
 }
@@ -112,24 +128,7 @@ nav {
 	font-family: 'Patua One', cursive;
 }
 
-/** Formatting for navbar links **/
-.navbar-inverse .navbar-nav > li > a {
-	color: #D90000;
-	font-family: 'Patua One', cursive;
-}
 
-li {
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	text-decoration: none;
-	/*list-style: none;*/
-}
-
-p {
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	padding-left: 15px;
-}
 
 #about {
 	font-size: 2.6vh;
@@ -173,6 +172,11 @@ p {
 	list-style: none;
 }
 
+.grayscale {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
 #myPic {
 	position: relative;
 	max-width: 100vh;
@@ -189,6 +193,12 @@ p {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	transform: translateY(-65%);
+}
+
+/** Formatting for navbar links **/
+.navbar-inverse .navbar-nav > li > a {
+	color: #D90000;
+	font-family: 'Patua One', cursive;
 }
 
 #projects {
@@ -249,6 +259,8 @@ p {
 	display: flex;
 	align-items: center;
 }
+
+/** Media Queries for Viewport Width - Must be at end of document for specificity reasons **/
 
 @media (max-width: 480px) {
 	h1 {
