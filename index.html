@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Peter Mooney - Programming Extraordinaire</title>
-		<link href='http://fonts.googleapis.com/css?family=Patua+One|Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Patua+One%7CRoboto' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
 		<link href="css/style.css" rel="stylesheet" type="text/css" >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 				<nav class="navbar navbar-inverse navbar-fixed-top">
 					<div class="container-fluid">
 						<div class="navbar-header">
-							<button id="navButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<button id="nav-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar">
 								<!-- Determines how many lines are in the "Hamburger" button -->
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -32,12 +32,12 @@
 
 							</div>
 
-						<div class="collapse navbar-collapse" id="myNavbar">
+						<div class="collapse navbar-collapse" id="my-navbar">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a id="navlink" class="about" href="#">About</a></li>
-								<li><a id="navlink" class="projects" href="#">Projects</a></li>
-								<li><a id="navlink" class="social" href="#">Social</a></li>
-								<li><a id="navlink" class="contact" href="#">Contact</a></li>
+								<li><a class="about" href="#">About</a></li>
+								<li><a class="projects" href="#">Projects</a></li>
+								<li><a class="social" href="#">Social</a></li>
+								<li><a class="contact" href="#">Contact</a></li>
 							</ul>
 						
 						</div>
@@ -53,8 +53,8 @@
 				<div class="row ">
 					<div class="col-xs-12 vertical-center">
 						<div>
-							<img class="img-responsive img-circle" src="img/binaryMe.jpg" />
-							<img class="img-responsive img-circle" id="regularMePic" src="img/regularMe.jpg" />
+							<img alt="Binary version of Peter Mooney" class="img-responsive img-circle" src="img/binaryMe.jpg" />
+							<img alt="Picture of Peter MOoney" class="img-responsive img-circle" id="regular-me-pic" src="img/regularMe.jpg" />
 						
 						</div>
 					
@@ -96,10 +96,11 @@
 						<h3>Activities and Interests:</h3>
 					
 						<ul>
-							<li><span class="job-header bold">Alpha Kappa Psi - Psi Rho</span>, Founding Father </li>
+							<li><span class="job-header bold">Alpha Kappa Psi - Psi Rho</span>, Founding Father 
 								<ul>
 									<li>Technology Committee Chairman (January 2010 - December 2010)</li>
 								</ul>
+							</li>
 							<li><span class="job-header bold">UCONN Technology Incubator Program</span>, Member (March - September, 2012)</li>
 							<li><span class="job-header bold">Innovation Quest Incubator Program</span>, Member (April - July, 2012)</li>
 						</ul>
@@ -116,7 +117,7 @@
 						<h3>Experience:</h3>
 
 							<ul>
-								<li><span class="job-header bold"><span class="italics">IT Manager, </span>Continuum of Care, New Haven, CT | October 2012 - March 2015</span></li>
+								<li><span class="job-header bold"><span class="italics">IT Manager, </span>Continuum of Care, New Haven, CT | October 2012 - March 2015</span>
 									<ul>
 										<li>Purchased, deployed, and managed over 160 computers in 40 locations for approximately 600 employees as part of a growing non-profit enterprise.</li>
 										<li>Worked directly with executive team to plan and consult about all IT matters, including the migration of all external offices to a Remote Desktop Services Solution</li>
@@ -125,15 +126,16 @@
 										<li>Researched, configured, and implemented a Remote Windows Desktop environment for Chromebooks and Chromeboxes, saving the company an average of $700 per device</li>
 										<li>Purchased and configured over 40 Raspberry Pi devices as Google Cloud Print Proxies as well as SSL Wrappers for outgoing SMTP Scan-to-Email.</li>
 									</ul>
+								</li>
 							</ul>
 
 							<ul>
-								<li><span class="job-header bold"><span class="italics">Technology Support, </span>University of Connecticut, Storrs, CT | October 2008 - July 2012</span></li>
+								<li><span class="job-header bold"><span class="italics">Technology Support, </span>University of Connecticut, Storrs, CT | October 2008 - July 2012</span>
 									<ul>
 										<li>Managed and troubleshot university computers within a multi-department network.</li>
 										<li>Created a 40 page support manual for all future incoming employees.</li>
 									</ul>
-						
+								</li>
 							</ul>
 
 					</div>
@@ -181,7 +183,7 @@
 						</div>
 						<!-- Row for Project "Built-With" Logos -->
 						<div class="row">
-							<div class="col-xs-12" id="project-built-with-logos">
+							<div class="col-xs-12 project-built-with-logos">
 								<img src="img/androidIcon.png" alt="Built with Android" />
 								<img src="img/businessPlanningIcon.png" alt="Planned and developed business" />
 							</div>
@@ -210,7 +212,7 @@
 						</div>
 
 						<!-- Row for Project "Built-With" Logos -->
-						<div class="col-xs-12" id="project-built-with-logos">	
+						<div class="col-xs-12 project-built-with-logos">	
 							<img src="img/androidIcon.png" alt="Built with Android" />
 							<img src="img/phpIcon.png" alt="Built with PHP" />
 							<img src="img/mysqlIcon.png" alt="Built with MySQL" />

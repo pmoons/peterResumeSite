@@ -8,7 +8,7 @@ $(document).ready(function() {
     }
 
     // Mouse hover event handler for My Picture
-    $( "#regularMePic" ).hover(
+    $( "#regular-me-pic" ).hover(
         function() {
             if (window.innerWidth > 768) {
                 $( this ).fadeTo(500, 0);
@@ -96,7 +96,7 @@ function changeNavColor() {
 
 // Rotates the opactity of the 'regularMe' picture and then calls itself again for an infinite loop.
 function setMeImage() {
-	$('#regularMePic').fadeOut(500).delay(2000).fadeIn(1000, function() { setMeImage() });
+	$('#regular-me-pic').fadeOut(500).delay(2000).fadeIn(1000, function() { setMeImage() });
 };
 
 function resizeLogo(ev) {
@@ -124,6 +124,6 @@ function goToByScroll(id){
     $("." + id).css("color: #D90000");
     // Close menu drop down if screen is small enough
     if (window.innerWidth < 768) {
-    	document.getElementById("navButton").click();
+    	document.getElementById("nav-button").click();
     }
 };

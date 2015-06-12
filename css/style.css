@@ -202,7 +202,7 @@ p {
 }
 
 /* Logos of code that built the Projects */
-#project-built-with-logos img{
+.project-built-with-logos img{
 	width: 10vmin;
 	vertical-align: middle;
 }
@@ -297,11 +297,6 @@ p {
 
 	.navbar-inverse .navbar-nav > li > a {
 		font-size: 3vmin;
-	}
-
-	/* Overrides Bootstrap's a:focus nav color */;
-	#navlink:focus {
-		color: #D90000 !important;
 	}
 
 	#social .social-media img {
