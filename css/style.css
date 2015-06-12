@@ -10,11 +10,6 @@ a:hover {
 	color: #D90000;
 }
 
-
-hr {
-	width: 50%;
-}
-
 body {
 	margin: 0px;
 	background-color: #2E0927;
@@ -24,29 +19,25 @@ body {
 }
 
 h1, h2, h3 {
+	color: #D90000;
+	font-family: 'Patua One', cursive;
 	margin-left: 15px;
 }
 
 h1 {
-	margin-top: 0px;
+	margin-top: 3px;
 }
 
 h2 {
-	color: #D90000;
-	font-family: 'Patua One', cursive;
 	font-size: 2.2em;
 	margin-top: 10px;
 }
 
 h3 {
-	color: #D90000;
-	font-family: 'Patua One', cursive;
 	font-size: 1.7em;
 }
 
 h4 {
-	color: #D90000;
-	font-family: 'Patua One', cursive;
 	font-size: 1.2em;
 	margin-top: 40px;
 }
@@ -61,6 +52,10 @@ header .navbar-inverse {
 	z-index: 1;
 	display: block;
 	text-transform: uppercase;
+}
+
+hr {
+	width: 50%;
 }
 
 li {
@@ -81,61 +76,20 @@ p {
 	padding-left: 15px;
 }
 
-.bold {
-	font-weight: bold;
-}
-
-.container-fluid {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.container-fluid > .navbar-header {
-	margin: 0px;
-}
-
-.job-header {
-	color: #04756F;
-}
-
-.italics {
-	font-style: italic;
-}
-
-.navbar-brand {
-	padding-top: 10px;
-}
-
-/* Styling for hamburger button */
-.navbar-toggle {
-	border: 0px;
-}
-
-.navbar-collapse {
-	border: 0px;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-
-.row {
-	margin-right: 0px;
-	margin-left: -15px;
-}
-/** Formatting for Peter Mooney logo**/
-#logo {
-	color: #FF2D00 ;
-	display: inline;
-	font-family: 'Patua One', cursive;
-}
-
-
-
 #about {
 	font-size: 2.6vh;
 	text-align: center;
 	min-height: 100vh;
 	background-color: #FF8C00;
 	text-align: left;
+}
+
+#amayalock-logo {
+	height: 20vw;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 #contact {
@@ -163,13 +117,22 @@ p {
 	text-align: justify;
 }
 
-#contact .contactMethods {
+#contact .contact-methods {
 	display: table;
 	margin: 0 auto;
 }
 
-.contactMethods li {
+.contact-methods li {
 	list-style: none;
+}
+
+.container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.container-fluid > .navbar-header {
+	margin: 0px;
 }
 
 .grayscale {
@@ -177,7 +140,22 @@ p {
 	filter: grayscale(100%);
 }
 
-#myPic {
+.italics {
+	font-style: italic;
+}
+
+.job-header {
+	color: #04756F;
+}
+
+/** Formatting for Peter Mooney logo**/
+#logo {
+	color: #FF2D00 ;
+	display: inline;
+	font-family: 'Patua One', cursive;
+}
+
+#my-pic {
 	position: relative;
 	max-width: 100vh;
 	height: 100vh;
@@ -186,7 +164,7 @@ p {
 	margin-top: 10%;
 }
 
-#myPic img {
+#my-pic img {
 	width: 100vmin;
 	position: absolute;
 	border-radius: 50%;
@@ -195,10 +173,25 @@ p {
 	transform: translateY(-65%);
 }
 
+.navbar-brand {
+	padding-top: 10px;
+}
+
+.navbar-collapse {
+	border: 0px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
 /** Formatting for navbar links **/
 .navbar-inverse .navbar-nav > li > a {
 	color: #D90000;
 	font-family: 'Patua One', cursive;
+}
+
+/* Styling for hamburger button */
+.navbar-toggle {
+	border: 0px;
 }
 
 #projects {
@@ -209,16 +202,8 @@ p {
 }
 
 /* Logos of code that built the Projects */
-#projectBuiltWithLogos img{
+#project-built-with-logos img{
 	width: 10vmin;
-	vertical-align: middle;
-}
-
-/* Logos of items that built Sobrio*/
-#projectsColLeft img:not(#sobrioLogo) {
-	max-width: 12%;
-	max-height: 12%;
-	padding-right: 40px;
 	vertical-align: middle;
 }
 
@@ -226,11 +211,12 @@ p {
 	color: white;
 }
 
-#amayalockLogo {
-	height: 20vw;
+.row {
+	margin-right: 0px;
+	margin-left: -15px;
 }
 
-#sobrioLogo {
+#sobrio-logo {
 	height: 20vw;
 }
 
@@ -240,7 +226,7 @@ p {
 	font-size: 2.6vmin;
 }
 
-#social .socialMedia {
+#social .social-media {
 	padding-top: 30px;
 	margin: auto;
 	position: relative;
@@ -248,7 +234,7 @@ p {
   	transform: translateY(35%);
 }
 
-#social .socialMedia img {
+#social .social-media img {
 	vertical-align: middle;
 	width: 33vmin;
 }
@@ -273,11 +259,11 @@ p {
 	}
 
 	/* Sizing and positioning for social media buttons */
-	#social .socialMedia img {
+	#social .social-media img {
 		width: 30vh;
 	}
 
-	#social .socialMedia {
+	#social .social-media {
 		padding-top: 0px;
 		transform: translateY(0%);
 	}
@@ -294,11 +280,11 @@ p {
 	}
 
 	/* Sizing and positioning for social media buttons */
-	#social .socialMedia img {
+	#social .social-media img {
 		width: 30vh;
 	}
 
-	#social .socialMedia {
+	#social .social-media {
 		padding-top: 0px;
 		transform: translateY(0%);
 	}
@@ -318,7 +304,7 @@ p {
 		color: #D90000 !important;
 	}
 
-	#social .socialMedia img {
+	#social .social-media img {
 		width: 30vh;
 	}
 

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // If the user is on a mobile device...
     if (window.innerWidth < 768) {
-       // Set myPic image opacity rotation
+       // Set my-pic image opacity rotation
 	   setMeImage();
        // Remove grayscale from social media images
        $( "#stack-overflow-logo, #git-hub-logo, #twitter-logo").removeClass("grayscale");
@@ -49,7 +49,7 @@ $(document).scroll(changeNavColor);
 // Changes the background of the nav links as the user scrolls through website.
 function changeNavColor() {
     var x = $(this).scrollTop(),
-    	myPic = $('#myPic'),
+    	myPic = $('#my-pic'),
         about = $('#about'),
         projects = $('#projects'),
         social = $('#social'),
