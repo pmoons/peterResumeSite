@@ -59,38 +59,27 @@ function changeNavColor() {
     // A user scrolling to that section wouldn't be able to see the top 41 pixels otherwise.
   	if (x >= myPic.offset().top && x < (myPic.offset().top + myPic.height())) {
   		//Reset all nav links
-  		$('.about').css("background-color", "#2E0927");
-        $('.projects').css("background-color", "#2E0927");
-        $('.social').css("background-color", "#2E0927");
-        $('.contact').css("background-color", "#2E0927");
+  		$('.about, .projects, .social, .contact').css("background-color", "#2E0927");
   	}
     if (x >= about.offset().top - 41 && x < (about.offset().top + about.height())) {
         $('.about').css("background-color", "#04756F");
         // Reset other nav link colors
-        $('.projects').css("background-color", "#2E0927");
-        $('.social').css("background-color", "#2E0927");
-        $('.contact').css("background-color", "#2E0927");
+        $('.projects, .social, .contact').css("background-color", "#2E0927");
     }
     if (x >= projects.offset().top - 41 && x < (projects.offset().top + projects.height())) {
         $('.projects').css("background-color", "#04756F");
         // Reset other nav link colors
-        $('.about').css("background-color", "#2E0927");
-        $('.social').css("background-color", "#2E0927");
-        $('.contact').css("background-color", "#2E0927");
+        $('.about, .social, .contact').css("background-color", "#2E0927");
     }
     if (x >= social.offset().top - 41 && x < (social.offset().top + social.height() / 2)) {
         $('.social').css("background-color", "#04756F");
         // Reset other nav link colors
-        $('.projects').css("background-color", "#2E0927");
-        $('.about').css("background-color", "#2E0927");
-        $('.contact').css("background-color", "#2E0927");
+        $('.projects, .about, .contact').css("background-color", "#2E0927");
     }
     if (x > (social.offset().top - 41 + social.height() / 5)) {
     	$('.contact').css("background-color", "#04756F");
     	// Reset other nav link colors
-        $('.projects').css("background-color", "#2E0927");
-        $('.social').css("background-color", "#2E0927");
-        $('.about').css("background-color", "#2E0927");
+        $('.projects, .social, .about').css("background-color", "#2E0927");
     }
 };
 
